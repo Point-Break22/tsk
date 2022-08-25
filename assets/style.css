@@ -43,13 +43,8 @@ nav {
     z-index: 400;
     width: 100%;
 }
-.logo { 
-    float: left;
-    width: auto;
-    height: auto;
-    padding: 66px 0 26px;
-    margin-left: 0;
-}
+.logo {}
+
 .btn-primary {
 background-color: #147B74;
 }

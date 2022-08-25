@@ -17,7 +17,7 @@
 
 <!-- Playing with bootstrap double nav -->
 <a class="navbar-brand ml-3" href="#">
-  <span class="header-location">Set your preferred Rexal Location</span>
+  <span class="">Set your preferred Rexall Location</span>
 </a>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-#1db1a8 sticky-top">
@@ -30,40 +30,35 @@
 
 
 
+
 <div class="collapse navbar-collapse flex-column " id="navbar">
-
-    <a class="logo" href="https://www.rexal.ca/">
-<img src="https://www.rexall.ca/media/logo/stores/1/rexall-trileaf-logo_3x.png" alt="Rexall" width="226"></a>
-<div class="collapse navbar-collapse" id="navbar-collapse">
-  <ul class="right ml-auto">
-      <div class="right"></div><form class="search" action="https://www.rexall.ca/search/" method="get">
-          <div class="container">
-            <label for="header-search-input" class="screenreader-only">
-                Search for health information</label>
-            <input type="text" name="q" class="js-focus-target" id="header-search-input" placeholder="Search for health information">
-
-        <button type="submit" class="btnheader-btn">
-            <span aria-hidden="true">Go</span>
-            <span class="screenreader-only"></span>
-        </button>
-          </div>
-      </form>
-  </ul>
-
-          <ul class="button-container">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      <li><a class="btn store-locator" href="#"><span>Find My Meds</span></a></li>
-      <li><a class="btn store-locator" href="https://www.rexall.ca/storelocator/"><span>Store Locator</span></a></li>
-      <li><a class="btn flyer" href="https://www.rexall.ca/eflyer/"><span>Weekly Flyer</span></a></li>
-      <li><a class="btn subscribe" href="https://www.rexall.ca/subscribe/"><span>Subscribe</span></a></li>
-      <li><a class="btn bewell-button" href="https://app.letsbewell.ca/sign-in" target="_blank"><span>Log in to Be Well™</span><span class="screenreader-only"> </span></a></li>
-           </ul>
+<div class="container-fluid">
+  <a class="navbar-brand" href="javascript:void(0)"><img src="https://www.rexall.ca/media/logo/stores/1/rexall-trileaf-logo_3x.png" alt="Rexall" width="226"></a>
 </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-<!-- Second Navigation -->
+  <form class="search justify-content-center">
+    <div class="container">
+      <label for="header-search-input" class="screenreader-only">
+          Search for health information        </label>
+      <input type="text" name="q" class="js-focus-target" id="header-search-input" placeholder="Search for health information">
+    <button class="btnheader-btn" type="button">GO</button>
+  </form></div>
+  <ul class="navbar-nav  w-100 justify-content-center px-3">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Find My Meds <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Store Locator <span class="sr-only">(current)</span></a>
+    </li> 
+    <li class="nav-item">
+      <a class="nav-link" href="#">Weekly Flyer <span class="sr-only">(current)</span></a>
+    </li> 
+    <li class="nav-item">
+      <a class="nav-link" href="#">Subscribe <span class="sr-only">(current)</span></a>
+    </li> 
+    <li class="nav-item">
+      <a class="nav-link" href="#">Log in to Be Well™ <span class="sr-only">(current)</span></a>
+    </li>
+  </ul> <!-- Second Navigation -->
 
   <ul class="navbar-nav justify-content-center w-100 bg-primary px-3">
     <li class="nav-item dropdown">
