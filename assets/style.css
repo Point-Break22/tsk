@@ -1,6 +1,5 @@
 /* styling for double navbar */
 html,body,header {
-    height: 40vh;
     font-family: 'Open Sans',sans-serif;
     scroll-behavior: smooth;
     color: black;
@@ -203,9 +202,7 @@ line-height: 1;
 }
 
 /* Page content */
-.container {
-    display: inline-block;
-}
+
 .container input{
     border: 1px solid #6e6e6e;
     border-radius: 5px;
@@ -267,24 +264,52 @@ form {
     }
     
 }
+  
+  
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+border-radius:0;
+}
+}
+  
 
-.navbar {
-    padding:0rem;
-    margin-bottom:2rem;
-  }
-  
-  .dropdown .dropdown-menu {
+/* JG Edits */
+
+.page-header {
+    background-color: #1db1a8;
+}
+
+.second-nav-container {
+    background-color: #e5f5f4;
+}
+
+.second-nav-container .nav-link {
+    padding: 16px;
+}
+
+.second-nav-container .dropdown .dropdown-menu {
     border-radius:0;
-   }
-  
-  
-  /* Medium devices (tablets, 768px and up) 
-  The navbar toggle appears at this breakpoint */
-  @media (min-width: 768px) {  
-  .dropdown:hover .dropdown-menu {
-      display: block;
-      margin-top: 0;
-    border-radius:0;
-   }
-  }
-  
+    position: absolute;
+}
+
+.page-header .collapse.navbar-collapse {
+    justify-content: end;
+}
+
+.location {
+    position: absolute;
+    top: -50px;
+    right: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.page-header .container {
+    position: relative;
+}
