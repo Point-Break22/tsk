@@ -10,6 +10,11 @@ nav {
     background-color: #1db1a8;
     display: block;
 }
+a {
+    color: #147b74;
+    text-decoration: none;
+    background-color: transparent;
+}
 .bg-primary {
     background-color: #e5f5f4!important;
 }
@@ -42,7 +47,44 @@ nav {
     z-index: 400;
     width: 100%;
 }
-.logo {}
+
+/* text styling */
+#med-finder {
+    text-align: center;
+}
+.med-title {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    letter-spacing: -0.037em;
+    color: #78BD43;
+    justify-content: center;
+}
+.find-title {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.037em;
+    color: #00BFAE;
+    justify-content: center;
+}
+.caption {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.037em;
+    color: #000;
+}
 
 .btn-primary {
 background-color: #147B74;
@@ -71,6 +113,19 @@ line-height: 1;
 }
 
 /* buttons */
+.btn-primary {
+    background-color: #147B74;
+        display: flex;
+        padding-top: 8px;
+        padding-right: 120px;
+        padding-left: 120px;
+        padding-bottom: 8px;
+        border: 10px;
+        border-radius: 6px;
+        line-height: 1;
+        font-size: 18px;
+        text-align: center;
+    }
 .btn {
     appearance: none;
     box-sizing: border-box;
@@ -104,77 +159,7 @@ line-height: 1;
 }
 .btn:visited {
     text-decoration: none;
-}
-.btn.store-locator::before {
-    background-position: -10px -7px;
-    width: 14px;
-    height: 22px;
-    background-size: auto 33px;
-    transform: translateY(-50%);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 18px;
-    display: block;
-    overflow: hidden;
-    background-position: 0 0;
-    background-size: auto 27px;
-    z-index: 1;
-}
-.btn.bewell-button::before {
-    background-position: 8px 5px;
-    width: 35px;
-    background-size: auto 27px;
-    z-index: 1;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 18px;
-    display: block;
-    overflow: hidden;
-    transform: translateY(-50%);
-    background-position: 0 0;
-}
-.btn.subscribe::before, .btn.subscribe::before {
-    background-position: -6px -6px;
-    width: 22px;
-    height: 22px;
-    background-size: auto 33px;
-    background-size: auto 27px;
-    z-index: 1;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 18px;
-    display: block;
-    overflow: hidden;
-
-}
-.btn.flyer::before {
-    background-position: -6px -7px;
-    width: 22px;
-    height: 22px;
-    background-size: auto 33px;
-    background-size: auto 27px;
-    z-index: 1;
-    transform: translateY(-50%);
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 18px;
-    display: block;
-    overflow: hidden;
-    -webkit-transform: translateY(-50%);
-}
-.btnheader-btn {
+}.btnheader-btn {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
