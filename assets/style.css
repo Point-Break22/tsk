@@ -1,5 +1,6 @@
 /* styling for double navbar */
 html,body,header {
+
     font-family: 'Open Sans',sans-serif;
     scroll-behavior: smooth;
     color: black;
@@ -14,6 +15,9 @@ a {
     color: #147b74;
     text-decoration: none;
     background-color: transparent;
+}
+a:hover{
+    color: none;
 }
 .bg-primary {
     background-color: #e5f5f4!important;
@@ -46,6 +50,9 @@ a {
     padding: 0;
     z-index: 400;
     width: 100%;
+}
+.d-flex {
+    justify-content: right;
 }
 
 /* text styling */
@@ -125,7 +132,14 @@ line-height: 1;
         line-height: 1;
         font-size: 18px;
         text-align: center;
+        justify-content: center;
     }
+.btn-primary:hover {
+    background-color: #147B74;
+}
+.btn-primary:active {
+    background-color: #255959;
+}
 .btn {
     appearance: none;
     box-sizing: border-box;
@@ -133,7 +147,7 @@ line-height: 1;
     cursor: pointer;
     position: relative;
     display: inline-block;
-    background-color: #fff;
+    background-color: #E5F5F4;
     color: #147b74;
     font-weight: 700;
     transition: background-color .2s;
@@ -148,6 +162,10 @@ line-height: 1;
     overflow: hidden;
     font-family: 'Open Sans',sans-serif;
 }
+.btn:hover { 
+    background-color: #147B74;
+}
+
 .button-container {
     list-style: none;
     clear: both;
@@ -171,8 +189,8 @@ line-height: 1;
     cursor: pointer;
     position: relative;
     display: inline-block;
-    background-color: #147b74;
-    color: #fff;
+    background-color: #ffff;
+    color: #147B74;
     font-weight: 700;
     transition: background-color .2s;
     height: auto;
@@ -185,7 +203,42 @@ line-height: 1;
     vertical-align: top;
     font-family: 'Open Sans',sans-serif;
 }
-
+.btnheader-btn:hover {
+    background-color: #E5F5F4;
+    color:#2791a3;
+    text-decoration: none;
+}
+.btn-large {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0);
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color: #ffff;
+    color: #147B74;
+    font-weight: 700;
+    transition: background-color .2s;
+    height: auto;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 11px 18px;
+    min-height: 36px;
+    margin-left: 5px;
+    vertical-align: top;
+    font-family: 'Open Sans',sans-serif;
+}
+.btn-large:hover {
+    background-color: #E5F5F4;
+    color:#2791a3;
+    text-decoration: none;
+}
 /* Page content */
 
 .container input{
@@ -248,19 +301,17 @@ form {
     background-color: #1db1a8 !important;
     }
     
-}
-  
-  
-/* Medium devices (tablets, 768px and up) 
+} /* Medium devices (tablets, 768px and up) 
 The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
 .dropdown:hover .dropdown-menu {
     display: block;
+    display: none;
     margin-top: 0;
 border-radius:0;
 }
 }
-  
+
 
 /* JG Edits */
 

@@ -16,7 +16,6 @@
     <link href="./assets/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
 <header class="page-header pt-5">
   <div class="container">
     <div class="location">
@@ -24,30 +23,39 @@
         <span class="">Set your preferred Rexall Location</span>
       </a>
     </div>
-  
+
+    <div class="search">
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">GO</button>
+      </form>
+    </div>
+    
+
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <a class="navbar-brand" href="#"><img src="https://www.rexall.ca/media/logo/stores/1/rexall-trileaf-logo_3x.png" alt="Rexall" width="226"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      
+      
       <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-        
+
         <ul class="navbar-nav">
           <li class="nav-item">
-              <a class="nav-link" href="#">Find My Meds <span class="sr-only">(current)</span></a>
+              <a class="btnheader-btn" href="#">Find My Meds <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Store Locator <span class="sr-only">(current)</span></a>
+              <a class="btnheader-btn" href="#">Store Locator <span class="sr-only">(current)</span></a>
           </li> 
           <li class="nav-item">
-              <a class="nav-link" href="#">Weekly Flyer <span class="sr-only">(current)</span></a>
+              <a class="btnheader-btn" href="#">Weekly Flyer <span class="sr-only">(current)</span></a>
           </li> 
           <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe <span class="sr-only">(current)</span></a>
+              <a class="btnheader-btn" href="#">Subscribe <span class="sr-only">(current)</span></a>
           </li> 
           <li class="nav-item">
-              <a class="nav-link" href="#">Log in to Be Well™ <span class="sr-only">(current)</span></a>
+              <a class="btnheader-btn" href="#">Log in to Be Well™ <span class="sr-only">(current)</span></a>
           </li>
         </ul>
 
@@ -100,7 +108,6 @@
         </li>
         </ul>
       </div>
-
     </nav>
   </div>
   <div class="second-nav-container d-none d-lg-block">
@@ -174,7 +181,7 @@
       <div class="col-sm"><div class="container mt-3">
         <div class="row">
           <div class="col-sm">
-            <label for="Quantity" class="mb-2 mr-sm-2">Medication Name</label>
+            <label for="Quantity" class="mb-2 mr-sm-2">Medication Name / DIN</label>
             <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="" name="">
           </div>
           <div class="col-sm">
@@ -199,7 +206,7 @@
   <div class="row">
               <div class="col-sm">
                 <form class="form-inline" action="/action_page.php">
-                  <label for="vin" class="mb-2 mr-sm-2">Postal Code / VIN</label>
+                  <label for="vin" class="mb-2 mr-sm-2">Postal Code / ZIP</label>
                   <input type="text" class="form-control mb-2 mr-sm-2" id="vin" placeholder="" name="">
               </div>
               <div class="col-sm">
@@ -231,8 +238,8 @@
 
           </div>
 
-<!-- Priscilla  Button -->              
-              <button type="submit" class="btn-primary"><img src="./assets/images/resized search image.png">Search</button>
+<!-- Priscilla  Button -->           
+<button type="button" class="btn-primary btn-block"><img src="./assets/images/resized search image.png">Search</button>   
             </form>
           </div>
 
@@ -246,12 +253,15 @@
       <a href="https://www.rexall.ca/">
       <img src="https://www.rexall.ca/media/logo/stores/1/rexall-trileaf-logo_3x.png" alt="Rexall home page" width="226">
       </a>
-      <a class="btn large store-locator" href="https://www.rexall.ca/storelocator/">Store Locator</a>
-      <a class="btn large flyer" href="https://www.rexall.ca/eflyer/">Weekly Flyer</a>
-      <a class="btn large subscribe" href="https://www.rexall.ca/subscribe/">Subscribe</a>
-      <a class="btn large bewell-button" href="https://app.letsbewell.ca/sign-in" target="_blank">Log in to Be Well™<span class="screenreader-only"> (opens in a new window)</span></a>
+      <a class="btn-large" href="">Store Locator</a>
+      <a class="btn-large" href="">Weekly Flyer</a>
+      <a class="btn-large" href="">Subscribe</a>
+      <a class="btn-large" href="" target="_blank">Log in to Be Well™<span class="screenreader-only"> (opens in a new window)</span></a>
 </div>
 </footer>
+
+  <img src="./assets/images/rexall-footer.png" class="img-fluid" alt="Responsive image">
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
      <script src="js/index.js"></script>
 </body>
