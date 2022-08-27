@@ -349,3 +349,23 @@ border-radius:0;
 .page-header .container {
     position: relative;
 }
+
+@media screen and (max-width: 768px){
+    .btnheader-btn {
+        background-color: transparent;
+        padding:0;
+        color: #20615c;
+        font-weight: normal;
+        font-size: initial;
+        margin-left: 0;
+    }
+    ul.navbar-nav.d-block.d-lg-none {
+       margin-top: -10px;
+    }
+    .nav-item .btnheader-btn, .nav-item .nav-link {
+       color: white !important;
+    }
+    .navbar-collapse > .navbar-nav {
+       margin-top: 25px;
+    }
+}
