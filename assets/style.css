@@ -315,6 +315,9 @@ border-radius: 0;
 }
 }
 
+.modal-body{
+    position: relative; 
+}
 
 /* JG Edits */
 
